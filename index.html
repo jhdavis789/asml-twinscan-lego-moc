@@ -10,12 +10,14 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
     margin: 0; padding: 32px 24px 64px;
     background: #f4f5f7; color: #1c1f23;
-    max-width: 1200px; margin-left: auto; margin-right: auto;
+    max-width: 1280px; margin-left: auto; margin-right: auto;
   }
   h1 { font-size: 28px; margin: 0 0 4px; }
   h2 { font-size: 20px; margin: 32px 0 12px; border-bottom: 1px solid #d8dde4; padding-bottom: 6px; }
+  h3 { font-size: 16px; margin: 20px 0 8px; color: #22303c; }
   .lead { color: #5b6471; font-size: 15px; margin: 0 0 24px; }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 16px; }
+  .versions { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 12px; }
   figure { background: #fff; border: 1px solid #d8dde4; border-radius: 8px; padding: 12px; margin: 0; }
   figure img { width: 100%; border-radius: 4px; display: block; }
   figcaption { font-size: 13px; color: #5b6471; margin-top: 8px; }
@@ -35,28 +37,30 @@
   details { background: #fff; border: 1px solid #d8dde4; border-radius: 8px; padding: 12px 16px; }
   details > summary { cursor: pointer; font-weight: 500; }
   pre { font-size: 13px; overflow-x: auto; }
+  .changelog li { margin-bottom: 6px; }
+  .badge { display:inline-block; background:#2058c4; color:#fff; font-size:11px; padding:2px 8px; border-radius:10px; vertical-align:middle; margin-left:6px; }
   @media (prefers-color-scheme: dark) {
     body { background: #15181c; color: #e6e9ee; }
     figure, .stat, details { background: #20242a; border-color: #2c323a; }
     h2 { border-color: #2c323a; }
-    .lead, figcaption, .stat .l { color: #98a2b1; }
+    .lead, figcaption, .stat .l, h3 { color: #98a2b1; }
     .links a { color: #6ea6ff; }
   }
 </style>
 </head>
 <body>
 
-<h1>ASML TWINSCAN EXE:5000C — Lego MOC</h1>
+<h1>ASML TWINSCAN EXE:5000C — Lego MOC <span class="badge">v0.6</span></h1>
 <p class="lead">
   Code-driven original Lego MOC inspired by the official ASML employee-exclusive
-  TWINSCAN EXE:5000C kit. Designed in pure Python, rendered headless. Not a
-  reproduction of ASML's instruction booklet.
+  TWINSCAN EXE:5000C kit. Designed in pure Python, rendered headless. Iterating
+  for fidelity, not part count.
 </p>
 
 <div class="stats">
-  <div class="stat"><div class="n">580</div><div class="l">total parts</div></div>
-  <div class="stat"><div class="n">30</div><div class="l">unique part/color</div></div>
-  <div class="stat"><div class="n">31</div><div class="l">build steps</div></div>
+  <div class="stat"><div class="n">665</div><div class="l">total parts</div></div>
+  <div class="stat"><div class="n">41</div><div class="l">unique part/color</div></div>
+  <div class="stat"><div class="n">38</div><div class="l">build steps</div></div>
   <div class="stat"><div class="n">44 × 12</div><div class="l">stud footprint</div></div>
 </div>
 
@@ -66,29 +70,47 @@
   <a href="parts_list.md">Parts list (Markdown)</a>
 </p>
 
-<h2>Five-angle renders</h2>
+<h2>v0.6 — current build</h2>
 <div class="grid">
-  <figure><img src="v04_iso.png" alt="iso view"><figcaption>Isometric (front-quarter, +X +Y +Z camera). Visible faces: front, top, right side. Cheese-slope crown on Module D's roof, wafer platform protruding forward, white wordmark on right wall.</figcaption></figure>
-  <figure><img src="v04_front.png" alt="front view"><figcaption>Front orthographic. Closed exterior with red 1×1 round indicators, dark-blue band tile, dark-gray vacuum view-port round tiles, name-tile placeholder, orange EUV indicator at base-left.</figcaption></figure>
-  <figure><img src="v04_back.png" alt="back view"><figcaption>Back orthographic — looking through the open back. Reveals the diorama interior: trans-orange plasma chamber (right), white service cabinets, trans-purple EUV beam zig-zag, yellow e-stop, vacuum pump tower with trans-green status LEDs.</figcaption></figure>
-  <figure><img src="v04_side.png" alt="side view"><figcaption>Right side orthographic. Module D's right wall with the white wordmark placeholder.</figcaption></figure>
-  <figure><img src="v04_top.png" alt="top view"><figcaption>Top down. Grille tile vents on Module C, cheese-slope distribution on Module D, wafer platform front-extension on Module C.</figcaption></figure>
+  <figure><img src="v06_iso.png" alt="iso"><figcaption><strong>Isometric</strong>. Module A's black antenna spire (top-left), Module C's dashboard housing with twin antennas, Module D's open server-rack roof architecture, radar dish on right end.</figcaption></figure>
+  <figure><img src="v06_front.png" alt="front"><figcaption><strong>Front orthographic</strong>. 2 rows × 3 vacuum-chamber view-ports, dark service window, dark-blue band, red indicators, side vent grilles, ASML name tile.</figcaption></figure>
+  <figure><img src="v06_back.png" alt="back"><figcaption><strong>Back orthographic — diorama interior</strong>. Trans-orange plasma chamber (right), 8 white service cabinets with handles, Power Burst zig-zag EUV beam, yellow e-stop, vacuum pump tower with green LEDs.</figcaption></figure>
+  <figure><img src="v06_top.png" alt="top"><figcaption><strong>Top-down</strong>. Grille tile vents on Module C, dashboard housing centered, server-rack frames on D roof, radar dish.</figcaption></figure>
+  <figure><img src="v06_side.png" alt="side"><figcaption><strong>Right side</strong>. Module D's right wall with side vent grilles and ASML wordmark placeholder.</figcaption></figure>
 </div>
 
-<h2>Build steps (31 total)</h2>
-<p class="lead">Cumulative model state after each step. Click any to view full size.</p>
+<h2>Version history</h2>
+<p class="lead">Each version pushed shape-fidelity further, not just part count.</p>
+
+<h3>v0.4 — initial diorama (580 parts)</h3>
+<div class="versions">
+  <figure><img src="v04_iso.png" alt="v04 iso"><figcaption>v0.4 isometric. Stepped silhouette, running-bond walls, but mostly flat tops. Cheese-slope crown on D was sprinkled randomly.</figcaption></figure>
+  <figure><img src="v04_back.png" alt="v04 back"><figcaption>v0.4 interior. 5-zone diorama set up: plasma chamber, cabinets, EUV beam (round-plate proxy), e-stop, pump tower.</figcaption></figure>
+</div>
+
+<h3>v0.5 — slopes &amp; special shapes added (612 parts)</h3>
+<div class="versions">
+  <figure><img src="v05_iso.png" alt="v05 iso"><figcaption>v0.5 isometric. Added Module C dashboard housing with 45° slopes, Module D stepped tier roof with sloped perimeters, antenna spires. Renderer upgraded to draw slopes as actual triangular prisms.</figcaption></figure>
+  <figure><img src="v05_top.png" alt="v05 top"><figcaption>v0.5 top-down showing the new sloped ridges.</figcaption></figure>
+</div>
+
+<h3>v0.6 — fidelity match against reference photos (665 parts) <span class="badge">current</span></h3>
+<div class="versions">
+  <figure><img src="v06_iso.png" alt="v06 iso"><figcaption>v0.6 isometric. Open server-rack architecture replaces stepped tiers on Module D (matches the reference's industrial open-frame silhouette). Black antenna spire on Module A. Vacuum view-ports re-arranged to 2 rows × 3 cols.</figcaption></figure>
+  <figure><img src="v06_back.png" alt="v06 back"><figcaption>v0.6 interior. Power Burst zig-zag pieces (part 11302) replace round-plate proxies for the EUV beam path.</figcaption></figure>
+</div>
+
+<h2>Changelog</h2>
+<ul class="changelog">
+  <li><strong>v0.4 → v0.5</strong>: added LDraw slope/wedge/antenna parts to the parts library; replaced flat roofs with sloped/stepped tiers on D and a sloped dashboard housing on C; renderer upgraded to draw slopes as triangular prisms (high-edge detected from rotation matrix).</li>
+  <li><strong>v0.5 → v0.6</strong>: Module D roof rebuilt as open server-rack frame architecture (3 freestanding rack frames with front/back walls + roof bars). Module A black antenna spire. Vacuum chambers 2×3 grid. Service window on Module C front. Side vent grilles on Module D right wall. Power Burst (11302) zig-zag pieces for EUV beam path.</li>
+</ul>
+
+<h2>Build steps</h2>
+<p class="lead">Cumulative model state after each step in the v0.4 build (older snapshot — refreshed when v0.7 lands). Click any to view full size.</p>
 <div class="steps-strip" id="steps"></div>
 
 <details style="margin-top:24px">
-<summary>Design notes</summary>
-<p><strong>Diorama</strong>, not sealed exterior. Closed front + closed left/right + closed top + closed bottom; open back to display the interior.</p>
-<p><strong>Modules along X</strong>: A (light source, 6 wide) → B (interconnect, 2 wide) → C (main body / projection optics, 22 wide) → D (wafer-handler tower, 14 wide).</p>
-<p><strong>Walls</strong> built with stacked 1×8 / 1×6 / 1×4 / 1×2 / 1×1 bricks in a running-bond pattern (alternate-layer offset of 2 studs).</p>
-<p><strong>Interior diorama</strong> has 5 zones, left → right: plasma chamber → service cabinets → EUV beam path → control/e-stop → vacuum pump tower with gauges.</p>
-<p><strong>Branding placeholders</strong>: black 1×8 tile front-edge (would be printed "ASML EXE:5000C" in real kit) and white 1×4 tile on Module D right side wall (would be printed "ASML"). Custom printed tiles would need to be ordered separately.</p>
-</details>
-
-<details style="margin-top:12px">
 <summary>Sources</summary>
 <ul>
   <li><a href="https://www.tomshardware.com/tech-industry/asml-made-a-usd230-lego-kit-version-of-its-usd380-million-semiconductor-tool-worlds-first-high-na-euv-machine-immortalized-in-small-form-for-your-mantle">Tom's Hardware — ASML $230 Lego kit</a></li>
@@ -99,7 +121,6 @@
 </details>
 
 <script>
-  // Build the steps gallery
   const stepsDiv = document.getElementById("steps");
   for (let i = 1; i <= 31; i++) {
     const n = String(i).padStart(3, "0");
