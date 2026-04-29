@@ -1,42 +1,48 @@
 BrickLink ID,Part Name,Color Code,Color Name,Quantity
-3022,Plate 2 x 2,0,Black,132
-3022,Plate 2 x 2,71,Light Bluish Gray,130
-3024,Plate 1 x 1,71,Light Bluish Gray,98
+3024,Plate 1 x 1,71,Light Bluish Gray,168
+3022,Plate 2 x 2,71,Light Bluish Gray,129
+3022,Plate 2 x 2,0,Black,88
 3062b,Brick 1 x 1 Round,72,Dark Bluish Gray,54
 2412b,Tile 1 x 2 Grille,71,Light Bluish Gray,28
-3024,Plate 1 x 1,72,Dark Bluish Gray,24
+98138,Tile 1 x 1 Round,72,Dark Bluish Gray,26
 3023,Plate 1 x 2,71,Light Bluish Gray,21
-3004,Brick 1 x 2,15,White,20
-3008,Brick 1 x 8,71,Light Bluish Gray,15
-3009,Brick 1 x 6,71,Light Bluish Gray,15
+54200,Slope 30 1 x 1 x 2/3 (cheese),71,Light Bluish Gray,16
 3004,Brick 1 x 2,71,Light Bluish Gray,14
+3008,Brick 1 x 8,71,Light Bluish Gray,14
+3710,Plate 1 x 4,0,Black,12
+3710,Plate 1 x 4,15,White,12
 4073,Plate 1 x 1 Round,34,Trans Green,12
+3009,Brick 1 x 6,71,Light Bluish Gray,11
 3010,Brick 1 x 4,71,Light Bluish Gray,10
 3062b,Brick 1 x 1 Round,71,Light Bluish Gray,9
 4073,Plate 1 x 1 Round,4,Red,9
+3024,Plate 1 x 1,72,Dark Bluish Gray,8
 3040,Slope 45 1 x 2,71,Light Bluish Gray,8
-3023,Plate 1 x 2,0,Black,7
 14769,Tile 2 x 2 Round,72,Dark Bluish Gray,6
 3062b,Brick 1 x 1 Round,57,Trans Orange,6
-6636,Tile 1 x 6,272,Dark Blue,6
-54200,Slope 30 1 x 1 x 2/3 (cheese),71,Light Bluish Gray,4
+3623,Plate 1 x 3,15,White,6
+4073,Plate 1 x 1 Round,72,Dark Bluish Gray,6
+4162,Tile 1 x 8,272,Dark Blue,4
 11302,Power Burst 4L (variant),126,Trans Purple,3
 3022,Plate 2 x 2,72,Dark Bluish Gray,3
 3024,Plate 1 x 1,15,White,3
-3068b,Tile 2 x 2 (printed),72,Dark Bluish Gray,3
-98138,Tile 1 x 1 Round,72,Dark Bluish Gray,3
 3004,Brick 1 x 2,72,Dark Bluish Gray,2
-3024,Plate 1 x 1,0,Black,2
 3040,Slope 45 1 x 2,72,Dark Bluish Gray,2
+3068b,Tile 2 x 2 (printed),72,Dark Bluish Gray,2
+3666,Plate 1 x 6,71,Light Bluish Gray,2
 3957,?,71,Light Bluish Gray,2
-3957,?,72,Dark Bluish Gray,2
 4073,Plate 1 x 1 Round,36,Trans Red,2
 4740,?,72,Dark Bluish Gray,2
+2431,Tile 1 x 4,272,Dark Blue,1
 2431,Tile 1 x 4,15,White,1
-3020,Plate 2 x 4,71,Light Bluish Gray,1
+3023,Plate 1 x 2,72,Dark Bluish Gray,1
+3023,Plate 1 x 2,0,Black,1
 3023,Plate 1 x 2,15,White,1
-3957,?,0,Black,1
+3024,Plate 1 x 1,0,Black,1
+3069b,Tile 1 x 2,272,Dark Blue,1
+3957,?,72,Dark Bluish Gray,1
 4073,Plate 1 x 1 Round,25,Orange,1
 4073,Plate 1 x 1 Round,14,Yellow,1
 4162,Tile 1 x 8,0,Black,1
+98138,Tile 1 x 1 Round,0,Black,1
 98138,Tile 1 x 1 Round,15,White,1
