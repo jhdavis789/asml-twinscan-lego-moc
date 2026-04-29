@@ -50,7 +50,7 @@
 </head>
 <body>
 
-<h1>ASML TWINSCAN EXE:5000C — Lego MOC <span class="badge">v0.6</span></h1>
+<h1>ASML TWINSCAN EXE:5000C — Lego MOC <span class="badge">v0.7</span></h1>
 <p class="lead">
   Code-driven original Lego MOC inspired by the official ASML employee-exclusive
   TWINSCAN EXE:5000C kit. Designed in pure Python, rendered headless. Iterating
@@ -58,8 +58,8 @@
 </p>
 
 <div class="stats">
-  <div class="stat"><div class="n">665</div><div class="l">total parts</div></div>
-  <div class="stat"><div class="n">41</div><div class="l">unique part/color</div></div>
+  <div class="stat"><div class="n">678</div><div class="l">total parts</div></div>
+  <div class="stat"><div class="n">42</div><div class="l">unique part/color</div></div>
   <div class="stat"><div class="n">38</div><div class="l">build steps</div></div>
   <div class="stat"><div class="n">44 × 12</div><div class="l">stud footprint</div></div>
 </div>
@@ -70,13 +70,13 @@
   <a href="parts_list.md">Parts list (Markdown)</a>
 </p>
 
-<h2>v0.6 — current build</h2>
+<h2>v0.7 — current build</h2>
 <div class="grid">
-  <figure><img src="v06_iso.png" alt="iso"><figcaption><strong>Isometric</strong>. Module A's black antenna spire (top-left), Module C's dashboard housing with twin antennas, Module D's open server-rack roof architecture, radar dish on right end.</figcaption></figure>
-  <figure><img src="v06_front.png" alt="front"><figcaption><strong>Front orthographic</strong>. 2 rows × 3 vacuum-chamber view-ports, dark service window, dark-blue band, red indicators, side vent grilles, ASML name tile.</figcaption></figure>
-  <figure><img src="v06_back.png" alt="back"><figcaption><strong>Back orthographic — diorama interior</strong>. Trans-orange plasma chamber (right), 8 white service cabinets with handles, Power Burst zig-zag EUV beam, yellow e-stop, vacuum pump tower with green LEDs.</figcaption></figure>
-  <figure><img src="v06_top.png" alt="top"><figcaption><strong>Top-down</strong>. Grille tile vents on Module C, dashboard housing centered, server-rack frames on D roof, radar dish.</figcaption></figure>
-  <figure><img src="v06_side.png" alt="side"><figcaption><strong>Right side</strong>. Module D's right wall with side vent grilles and ASML wordmark placeholder.</figcaption></figure>
+  <figure><img src="v07_iso.png" alt="iso"><figcaption><strong>Isometric</strong>. Module A's black antenna spire (top-left), Module C's dashboard housing with twin antennas, Module D's open server-rack roof architecture, radar dish on right end.</figcaption></figure>
+  <figure><img src="v07_front.png" alt="front"><figcaption><strong>Front orthographic</strong>. 2 rows × 3 vacuum-chamber view-ports, dark service window, dark-blue band, red indicators, side vent grilles, ASML name tile.</figcaption></figure>
+  <figure><img src="v07_back.png" alt="back"><figcaption><strong>Back orthographic — diorama interior</strong>. Trans-orange plasma chamber (right), 8 white service cabinets with handles, Power Burst zig-zag EUV beam, yellow e-stop, vacuum pump tower with green LEDs.</figcaption></figure>
+  <figure><img src="v07_top.png" alt="top"><figcaption><strong>Top-down</strong>. Grille tile vents on Module C, dashboard housing centered, server-rack frames on D roof, radar dish.</figcaption></figure>
+  <figure><img src="v07_side.png" alt="side"><figcaption><strong>Right side</strong>. Module D's right wall with side vent grilles and ASML wordmark placeholder.</figcaption></figure>
 </div>
 
 <h2>Version history</h2>
@@ -94,16 +94,23 @@
   <figure><img src="v05_top.png" alt="v05 top"><figcaption>v0.5 top-down showing the new sloped ridges.</figcaption></figure>
 </div>
 
-<h3>v0.6 — fidelity match against reference photos (665 parts) <span class="badge">current</span></h3>
+<h3>v0.6 — open-frame Module D roof, vacuum chambers, Power Burst beam (665 parts)</h3>
 <div class="versions">
   <figure><img src="v06_iso.png" alt="v06 iso"><figcaption>v0.6 isometric. Open server-rack architecture replaces stepped tiers on Module D (matches the reference's industrial open-frame silhouette). Black antenna spire on Module A. Vacuum view-ports re-arranged to 2 rows × 3 cols.</figcaption></figure>
   <figure><img src="v06_back.png" alt="v06 back"><figcaption>v0.6 interior. Power Burst zig-zag pieces (part 11302) replace round-plate proxies for the EUV beam path.</figcaption></figure>
+</div>
+
+<h3>v0.7 — protruding cylindrical vacuum chambers, slope skirt on wafer platform (678 parts) <span class="badge">current</span></h3>
+<div class="versions">
+  <figure><img src="v07_iso.png" alt="v07 iso"><figcaption>v0.7 isometric. Vacuum chambers protrude as 2×2 round-brick cylinders giving real 3D depth on the front face. Slope skirt around the wafer-tray platform.</figcaption></figure>
+  <figure><img src="v07_front.png" alt="v07 front"><figcaption>v0.7 front. The cylindrical chambers cast distinct shadows; sloped front porch is visible.</figcaption></figure>
 </div>
 
 <h2>Changelog</h2>
 <ul class="changelog">
   <li><strong>v0.4 → v0.5</strong>: added LDraw slope/wedge/antenna parts to the parts library; replaced flat roofs with sloped/stepped tiers on D and a sloped dashboard housing on C; renderer upgraded to draw slopes as triangular prisms (high-edge detected from rotation matrix).</li>
   <li><strong>v0.5 → v0.6</strong>: Module D roof rebuilt as open server-rack frame architecture (3 freestanding rack frames with front/back walls + roof bars). Module A black antenna spire. Vacuum chambers 2×3 grid. Service window on Module C front. Side vent grilles on Module D right wall. Power Burst (11302) zig-zag pieces for EUV beam path.</li>
+  <li><strong>v0.6 → v0.7</strong>: Vacuum chambers extruded as 2×2 round-brick cylinders protruding forward from the front face (3D depth, not flush tiles). Slope skirt around wafer-tray platform on the front porch. Handler antenna on the platform.</li>
 </ul>
 
 <h2>Build steps</h2>
